@@ -1,4 +1,5 @@
 var express = require('express');
+const port = process.env.PORT || 3000;
 
 var app = express();
 
@@ -14,6 +15,6 @@ app.get('/products',function(req,res){
     res.render('contact');
 })
 
-app.listen(3000,function(){
+app.listen(port,function(){
     console.log("Server Started");
 });
